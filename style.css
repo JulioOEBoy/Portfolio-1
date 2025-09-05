@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #242525;
+    color: #ebe5e5;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10%;
+    gap: 40px;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.texto-apresentacao {
+    width: 50%;
+}
+
+.apresentacao_conteudo {
+    flex-direction: column;
+    font-size: 28px;
+    font-family: 'Krona One', sans-serif;
+    font-weight: normal;
+    margin-bottom: 20px;
+    gap: 40px;
+}
+
+.apresentacao_conteudo strong {
+    color: #5eb7c7;
+    font-weight: normal;
+    font-size: inherit;
+}
+
+.apresentacao_texto {
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last: left; 
+}
+
+
+
+.habilidades {
+    color: #0cad55;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.instagram, .github {
+    width: 140px;
+    color: #fefdff;
+    background-color: rgb(27, 114, 114);
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid rgb(27, 114, 114);
+    text-align: center;
+    border-radius: 16px;
+    padding: 15px 0;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.instagram:hover, .github:hover {
+    background-color: #1a7b7b;
+    border-color: #1a7b7b;
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #111;
+    color: white; 
+    padding: 10px 0;
+}
+
+
+.Foto {
+    width: 300px;
+    height: 300px;
+    background-image: url('Eu.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .apresentacao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto-apresentacao {
+        width: 100%;
+    }
+}
